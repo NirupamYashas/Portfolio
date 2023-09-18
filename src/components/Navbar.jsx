@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
@@ -6,12 +6,13 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
-  const [active, setActive] = useState("");
+  const [active, setActive] = useState(navLinks[0].id);
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef(null);
 
   // Add a new state to store the PDF link
-  const [pdfLink] = useState("https://drive.google.com/file/d/1AK_BFL26DAVlMEdnKtclYTQVO64D3Yoz/view?usp=sharing");
+  const [pdfLink] = useState("https://drive.google.com/file/d/196tyX9LpwSfzkf2fQbNQ2cX2l5cwKAek/view?usp=sharing");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,16 @@ const Navbar = () => {
       } else {
         setScrolled(false);
       }
+
+      // Find the section currently in view and update the active state accordingly
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const sectionId = section.id;
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          setActive(sectionId);
+        }
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,6 +51,7 @@ const Navbar = () => {
       } w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
+      ref={navRef}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -62,9 +74,9 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.id ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => setActive(nav.id)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -98,11 +110,11 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.id ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    setActive(nav.id);
                   }}
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>

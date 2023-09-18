@@ -23,6 +23,7 @@ import {
     leadingindiaai,
     nic,
     uf,
+    superstars,
     carrent,
     jobit,
     tripguide,
@@ -67,6 +68,14 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "skills",
+      title: "Skills"
+    },
+    {
+      id: "projects",
+      title: "Projects"
     },
     {
       id: "contact",
@@ -274,6 +283,18 @@ import {
         "Backend  &  Database:  Centralized  research  datasets  using  a  PostgresQL  server  coupled  with  a  Node.js  backend boosting  data  retrieval  efficiency  by  15%.  Utilized  GraphQL  for  optimized  data  querying.",
         "Deployment  &  Security:  Orchestrated  deployment  using  Docker,  kubernetes  on  AWS  with  CI/CD  integration  achieving 99.9%  uptime  rate.  Leveraged  Auth0  for  security,  achieving  a  90%  reduction  in  unauthorized  access.",
         "Automated  Testing:  Implemented  various  testing  methodologies  including  Unit,  Functional  and  UI  Testing."
+      ],
+    },
+    {
+      title: "Angular Developer",
+      company_name: "Superstars",
+      icon: superstars,
+      iconBg: "#E6DEDD",
+      date: "Sep 2023 - Present",
+      points: [
+        "Spearheaded the development of Superstars Web Application using Angular, Typescript, HTML, and CSS.",
+        "Developed RESTful APIs and microservices using Node.js and Express.js, improving backend performance by 40%",
+        "Collaborated with cross-functional teams to design & implement new features, improving the user experience by 25%."
       ],
     }
   ];

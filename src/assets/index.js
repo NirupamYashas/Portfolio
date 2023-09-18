@@ -52,6 +52,7 @@ import nic from "./company/NIC.png";
 import uf from "./company/UF.png";
 import ai from "./company/AI.png";
 import ufhealth from "./company/UF-Health.png";
+import superstars from "./company/superstars.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -118,6 +119,7 @@ export {
   nic,
   leadingindiaai,
   ufhealth,
+  superstars,
   carrent,
   jobit,
   tripguide,
