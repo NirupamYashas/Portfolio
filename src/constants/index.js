@@ -254,7 +254,7 @@ import {
       company_name: "National Informatics Centre (Govt. of India)",
       icon: nic,
       iconBg: "#E6DEDD",
-      date: "Jun 2021 - Aug 2021",
+      date: "Jan 2021 - Dec 2021",
       points: [
         "Designed an Automatic Voice Controlled System for Government Portal named Kisan-Suvidha (Live Website) Using NLP, enabling over 10 million farmers to access and control the website using voice commands in various local languages.",
         "Evaluated Different API’s like Speechly, Dialog Flow by Google, Annyang (JS library) for finding the entities during voice recognition with 95% accuracy."
@@ -265,7 +265,7 @@ import {
       company_name: "University Of Florida, Department of Computer & Information Science",
       icon: uf,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - May 2023",
+      date: "June 2022 - May 2023",
       points: [
         "Web  Application  Development:  Pioneered  the  design  of  a  web  application  that  retrieves  ﬁles  seamlessly  from Amazon  S3  Buckets.  This  integration  signiﬁcantly  improved  real  time  traffic  monitoring  capabilities  by  efficiently handling  sensor  data  from  over  1000  intersections  in  prominent  cities  like  Orlando,  Gainesville,  etc.",
         "Database  &  Deployment:  Deployed  the  fully  functional  Web  Application  on  AWS  using  Kubernetes  and  Docker services,  achieving  0  downtime  with  multiple  cluster  nodes.",
