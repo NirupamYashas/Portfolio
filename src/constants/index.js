@@ -93,7 +93,7 @@ import {
       icon: mobile,
     },
     {
-      title: "NodeJS Developer",
+      title: "NodeJS/.NET Developer",
       icon: backend,
     },
     {
@@ -286,15 +286,27 @@ import {
       ],
     },
     {
-      title: "Angular Developer",
+      title: "Angular Developer Intern",
       company_name: "Superstars",
       icon: superstars,
       iconBg: "#E6DEDD",
-      date: "Sep 2023 - Present",
+      date: "Sep 2023 - Dec 2023",
       points: [
         "Spearheaded the development of Superstars Web Application using Angular, Typescript, HTML, and CSS.",
         "Developed RESTful APIs and microservices using Node.js and Express.js, improving backend performance by 40%",
         "Collaborated with cross-functional teams to design & implement new features, improving the user experience by 25%."
+      ],
+    },
+    {
+      title: "Lead Web Developer",
+      company_name: "Superstars",
+      icon: superstars,
+      iconBg: "#E6DEDD",
+      date: "Dec 2023 - Present",
+      points: [
+        "Joined as a Core Member of Superstars Team as a Lead Web Developer,leading engineering & development of the Web Application.",
+        "Gave me an opportunity to strongly advance my knowledge in Angular Code, Product Development, and Platform Strategy.",
+        "The mission is to build the VIDEO Professional Network for Next-Gen. Professional network, jobs marketplace, and video platform in one."
       ],
     }
   ];
