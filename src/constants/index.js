@@ -57,7 +57,8 @@ import {
     vscode,
     ufhealth,
     webdashboard,
-    gatorrepo
+    gatorrepo,
+    mango
   } from "../assets";
   
   export const navLinks = [
@@ -339,6 +340,37 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Mango - Food Ordering Platform",
+      description:
+      "● Independently developed a comprehensive microservices-based application using .NET 8, showcasing a practical understanding of microservices architecture in the .NET ecosystem.\n" +
+      "● Successfully implemented a range of microservices including Product, Shopping Cart, Ordering, Payment, and Email, integrated with .NET Identity for robust authentication and authorization.\n" +
+      "● Utilized advanced tools and practices like Ocelot API Gateway, Entity Framework Core, and Azure Service Bus, culminating in a well-structured application demonstrating clean architecture principles.",
+      tags: [
+        {
+          name: "C#",
+          color: "blue-text-gradient",
+        },
+        {
+          name: ".NET",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Azure Service Bus",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "MS SQL Server",
+          color: "orange-text-gradient",
+        },
+        {
+          name: "RabbitMQ",
+          color: "red-text-gradient",
+        },
+      ],
+      image: mango,
+      source_code_link: "https://mangowebprojectmicroservice.azurewebsites.net/",
+    },
     {
       name: "Gator-Repo",
       description:

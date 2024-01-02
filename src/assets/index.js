@@ -66,8 +66,10 @@ import expensetracker from "./expensetracker.png"
 import webdashboard from './webdashboard.png'
 import gatorrepo from './gatorrepo.png'
 import labprofile from './labprofile.png'
+import mango from './Mango.png'
 
 export {
+  mango,
   logo,
   backend,
   creator,
